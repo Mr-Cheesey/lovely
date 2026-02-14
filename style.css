@@ -1,0 +1,98 @@
+body{
+    margin:0;
+    font-family: 'Segoe UI', sans-serif;
+    overflow-x:hidden;
+    text-align:center;
+}
+
+.intro{
+    background: linear-gradient(135deg,#ff9a9e,#fad0c4);
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    color:white;
+}
+
+.intro-container h1{
+    font-size:3rem;
+}
+
+button{
+    padding:12px 25px;
+    border:red;
+    border-radius:30px;
+    font-size:1rem;
+    cursor:pointer;
+    background:white;
+    color:#ff4b6e;
+    transition:0.3s;
+    box-shadow:0 0 15px rgba(255,255,255,0.6);
+}
+
+button:hover{
+    background:#ff4b6e;
+    color:white;
+}
+
+.fade-in{
+    animation:fade 2s ease forwards;
+}
+.fade-in-delay{
+    animation:fade 3s ease forwards;
+}
+
+@keyframes fade{
+    from{opacity:0;}
+    to{opacity:1;}
+}
+
+.love-page{
+    background: linear-gradient(135deg,#ff758c,#ff7eb3);
+    min-height:100vh;
+    color:white;
+    padding:40px 20px;
+}
+
+#typingText{
+    max-width:600px;
+    margin:20px auto;
+    font-size:1.2rem;
+    line-height:1.6;
+}
+
+.hidden{
+    display:none;
+}
+
+.gallery{
+    margin-top:30px;
+}
+
+.gallery img{
+    width:150px;
+    margin:10px;
+    border-radius:15px;
+    box-shadow:0 0 15px rgba(255,255,255,0.7);
+    transition:0.4s;
+}
+
+.gallery img:hover{
+    transform:scale(1.1);
+}
+
+.float{
+    position:absolute;
+    animation:floatUp 6s linear infinite;
+}
+
+@keyframes floatUp{
+    from{
+        transform:translateY(100vh);
+        opacity:1;
+    }
+    to{
+        transform:translateY(-10vh);
+        opacity:0;
+    }
+}
